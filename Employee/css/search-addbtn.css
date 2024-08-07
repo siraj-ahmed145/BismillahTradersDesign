@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background: #ffffff;
+    /* text-align: center; */
+    /* min-height: 100vh; */
+    
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    width: 94vw;
+    margin-top: 20vh;
+    margin-left: 6vw;
+    /* position: fixed; */
+}
+
+.search-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.search #search {
+    font-size: 1.3rem;
+    width: 20vw;
+    height: 5.5vh;
+    border-radius: 8px;
+    /* margin: 10px 34.5vw; */
+    padding: 0.4rem;
+    border: 3px solid rgb(206, 204, 204);
+    
+    
+}
+
+.search ::placeholder {
+    font-weight: 300;
+    color: black;
+}
+
+.search-icon{
+    color:white; 
+    font-size: 1.5rem;
+}
+
+
+.search .btn-search {
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    background: rgb(2, 117, 249);
+    cursor: pointer;
+    /* border: 1px; */
+}
+
+
+
+/* .months {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.months .select {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.months #months {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    border-radius: 8px;
+    border: 3px solid rgb(206, 204, 204)
+} */
+
+
+.btn-add {
+    padding: 0.6rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background:  rgb(2, 117, 249);
+    color: white;
+    cursor: pointer;
+    /* border: 1px; */
+}

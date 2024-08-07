@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 22vh;
+    color: rgb(123, 122, 122);
+
+}
+
+.credentials {
+    /* text-align: center; */
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 4vh;
+    margin-bottom: 0vh;
+    margin-left: 35.5vw;
+    color: black;
+
+}
+
+
+#input_credentials {
+    /* text-align: center; */
+    font-size: 1.6rem;
+    width: 27vw;
+    border-radius: 10px;
+    margin: 1vh 35.5vw;
+    padding: 12px;
+    border: 3px solid rgb(206, 204, 204);
+
+}
+
+.a-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+#credential-form ::placeholder {
+    color: gray;
+    font-weight: 300;
+    /* border: solid gray; */
+}
+
+
+.forgot_password {
+    /* text-decoration: none; */
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #648DDB;
+    margin-left: 36vw;
+    margin-top: 3.5vh;
+    /* flex-direction: row; */
+
+}
+
+
+.btn {
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 2.75px solid black;
+    padding: 0px 25px;
+    background-color: rgb(2, 117, 249);
+    color: white;
+    margin-left: 14vw;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 2048px) {
+    .btn {
+        margin-left: 13vw;
+    }
+}
+
+@media (max-width: 1910px) {
+
+    .header {
+        font-size: 3.5rem;
+    }
+
+    .btn {
+        margin-left: 12vw;
+    }
+}
+
+@media (max-width: 1710px) {
+    .btn {
+        margin-left: 13.3vw;
+    }
+
+    .credentials {
+        font-size: 1.5rem;
+        margin-left: 34vw;
+    }
+
+    #input_credentials {
+        font-size: 1.4rem;
+        margin-left: 34vw;
+        width: 30vw;
+    }
+
+    .forgot_password {
+        margin-left: 34.5vw;
+    }
+}
+
+@media (max-width: 1560px) {
+    .btn {
+        margin-left: 12vw;
+    }
+}
+
+@media (max-width: 1460px) {
+
+    .header {
+        font-size: 3.2rem;
+        margin-top: 25vh;
+    }
+
+    .btn {
+        margin-left: 11.7vw;
+    }
+
+    .credentials {
+        font-size: 1.5rem;
+        margin-left: 33vw;
+    }
+
+    #input_credentials {
+        font-size: 1.4rem;
+        margin-left: 33vw;
+        width: 32vw;
+    }
+
+    .forgot_password {
+        margin-left: 33.5vw;
+    }
+}
+
+
+@media (max-width: 1340px) {
+    .btn {
+        margin-left: 14vw;
+    }
+
+    .credentials {
+        font-size: 1.5rem;
+        margin-left: 30.5vw;
+    }
+
+    #input_credentials {
+        font-size: 1.4rem;
+        margin-left: 30.5vw;
+        width: 35.5vw;
+    }
+
+    .forgot_password {
+        margin-left: 31vw;
+    }
+}
+
+
+@media (max-width: 1240px) {
+    .btn {
+        margin-left: 12vw;
+    }
+
+    .header {
+        font-size: 3rem;
+    }
+
+
+}
+
+@media (max-width: 1096px) {
+    .btn {
+        margin-left: 9.6vw;
+    }
+
+    .header {
+        font-size: 2.7rem;
+    }
+
+    .credentials {
+        margin-left: 30vw;
+        font-size: 1.4rem;
+
+    }
+
+    #input_credentials {
+        margin-left: 30vw;
+        font-size: 1.3rem;
+        width: 36vw;
+    }
+
+    .forgot_password {
+        margin-left: 30.5vw;
+        /* font-size: 1rem; */
+    }
+}
+
+@media (max-width: 1030px) {
+    .btn {
+        margin-left: 13vw;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border-radius: 15px;
+        padding: 0px 20px;
+    }
+
+    .forgot_password {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .header {
+        margin-top: 25vh;
+        font-size: 2.3rem;
+    }
+
+    .credentials {
+        font-size: 1.4rem;
+    }
+
+    #input_credentials {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        margin-left: 10.5vw;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .header {
+        text-align: center;
+        margin-left: 4vw;
+    }
+
+    .btn {
+        margin-left: 15vw;
+        font-size: 1.3rem;
+        border-radius: 15px;
+        padding: 0px 15px;
+    }
+
+    .credentials {
+        font-size: 1.4rem;
+        margin-left: 30vw;
+    }
+
+    #input_credentials {
+        font-size: 1.3rem;
+        margin-left: 30vw;
+        width: 39vw;
+    }
+
+    .forgot_password {
+        font-size: 1rem;
+        margin-left: 31vw;
+    }
+
+}
+
+@media (max-width: 766px) {
+
+
+    .header {
+        font-size: 2.4rem;
+        margin-top: 28vh;
+    }
+
+    .credentials {
+        margin-left: 26vw;
+
+    }
+
+    #input_credentials {
+        margin-left: 26vw;
+        width: 46vw;
+    }
+
+    .btn {
+        margin-left: 18vw;
+        padding: 0 17px;
+    }
+
+    .forgot_password {
+        margin-left: 27vw;
+    }
+
+}
+
+@media (max-width: 690px) {
+
+    .header {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        margin-left: 15.5vw;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    .header {
+        margin-left: 0vw;
+        font-size: 2rem;
+    }
+
+    .btn {
+        margin-left: 14vw;
+        padding: 0 13px;
+        font-size: 1.2rem;
+    }
+
+    .credentials {
+        font-size: 1.3rem;
+        margin-left: 25vw;
+    }
+
+    #input_credentials {
+        font-size: 1.2rem;
+        margin-left: 25vw;
+        width: 44vw;
+        padding: 10px;
+    }
+
+    .forgot_password {
+        margin-left: 26vw;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 586px) {
+
+    .header {
+        margin-top: 28vh;
+    }
+
+    .btn {
+        margin-left: 17vw;
+    }
+
+    .credentials {
+        font-size: 1.3rem;
+        margin-left: 22vw;
+    }
+
+    #input_credentials {
+        font-size: 1.2rem;
+        margin-left: 22vw;
+        width: 49vw;
+        padding: 10px;
+    }
+
+    .forgot_password {
+        margin-top: 2.4vh;
+        margin-left: 23vw;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 518px) {
+
+
+    .btn {
+        margin-left: 18.5vw;
+    }
+
+    .credentials {
+        font-size: 1.2rem;
+        margin-left: 18.5vw;
+    }
+
+    #input_credentials {
+        font-size: 1.1rem;
+        margin-left: 18.5vw;
+        width: 55.5vw;
+        padding: 9px;
+    }
+
+    .forgot_password {
+        margin-left: 20vw;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 458px) {
+
+
+    .btn {
+        margin-left: 18.5vw;
+        font-size: 1rem;
+    }
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    .credentials {
+        font-size: 1.1rem;
+        margin-left: 18.5vw;
+    }
+
+    #input_credentials {
+        font-size: 1rem;
+        margin-left: 18.5vw;
+    }
+
+    .forgot_password {
+        margin-left: 20vw;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 398px) {
+
+
+    .btn {
+        margin-left: 18vw;
+    }
+
+    .header {
+        font-size: 1.6rem;
+        margin-left: 2vw;
+    }
+
+    .credentials {
+        font-size: 1rem;
+        margin-left: 17vw;
+    }
+
+    #input_credentials {
+        font-size: 0.9rem;
+        padding: 8px;
+        margin-left: 17vw;
+        width: 59vw;
+    }
+
+    .forgot_password {
+        margin-left: 19vw;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+
+    .btn {
+        margin-left: 11vw;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .header {
+        font-size: 1.4rem;
+        margin-top: 29vh;
+    }
+
+    .credentials {
+        font-size: 0.9rem;
+        margin-left: 19vw;
+    }
+
+    #input_credentials {
+        font-size: 0.8rem;
+        padding: 8px;
+        margin-left: 19vw;
+        width: 53vw;
+    }
+
+    .forgot_password {
+        margin-left: 20vw;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 322px) {
+
+
+    .btn {
+        margin-left: 16vw;
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .header {
+        font-size: 1.3rem;
+    }
+
+    .credentials {
+        font-size: 0.8rem;
+        margin-left: 17vw;
+    }
+
+    #input_credentials {
+        font-size: 0.7rem;
+        padding: 7px;
+        margin-left: 17vw;
+        width: 56vw;
+    }
+
+    .forgot_password {
+        margin-left: 18vw;
+        font-size: 0.6rem;
+    }
+}

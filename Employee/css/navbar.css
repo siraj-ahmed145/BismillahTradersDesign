@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+  
+
+.nav_bar nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 9vh;
+    display: flex;
+    align-items: center; 
+    box-shadow: 0px 0px 18px 10px rgba(0,0,0,0.3);
+}
+
+.nav-logo{
+    background-color: #339ffd;
+    width: 6.4vw;
+    height: 9vh;
+    text-align: center;
+}
+
+.nav-logo .logo{    
+    font-size: 2.5vw;
+    margin: 1.5vh;
+    color: white;
+}
+
+.nav_bar .list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+    padding: 0 2vw;
+} 
+
+
+
+.user-icon {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.right-navicons{
+    display: flex;
+    align-items: center;
+}
+
+.right-navicons .fa-house{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.right-navicons hr{
+    margin-left: 1vw;
+    height: 4vh;
+    border: 1px solid rgb(172, 172, 172);
+}
+
+
+.usercircle-icon{
+    color: #d5d0e2;
+    font-size: 3rem;
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 0.1vw;
+    width: 8vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: #292b2c;
+    /* color: white; */
+    padding: 1.5vh;
+    margin: 10px;
+}
+
+.user-subMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.user-subMenu .profile-logout{
+    /* text-decoration: none; */
+    color: white;
+    line-height: 2rem;
+}
+
+.profile-logout p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.profile-logout:hover p{
+    font-weight: 600;
+}
+
+
+@media(max-width: 1125px)
+{
+    .user-icon{
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width: 980px)
+{
+    .user-icon{
+        margin-left: 3vw;
+    }
+}
+
+@media(max-width: 800px)
+{
+    .user-icon{
+        margin-left: 5vw;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 630px)
+{
+
+    .user-icon{
+        margin-left: 5vw;
+        font-size: 1.4rem;
+    }
+
+    .signout p{
+        font-size: 1rem;
+    }
+
+    .signout-icon{
+        font-size: 0.8rem;
+    }
+
+    .nav_bar{
+        height: 7vh;
+    }
+
+}
+
+@media(max-width: 470px)
+{
+
+    .nav_bar{
+        height: 6vh;
+    }
+
+    .user-icon{
+        margin-left: 7vw;
+        font-size: 1.3rem;
+    }
+
+    .signout p{
+        font-size: 0.8rem;
+        margin-right: 0.1rem;
+    }
+
+    
+    .signout-icon{
+        font-size: 0.6rem;
+        margin-bottom: 0.1rem;
+    }
+}
+
+@media(max-width: 365px)
+{
+
+    .nav_bar{
+        height: 5vh;
+    }
+
+    .user-icon{
+        margin-left: 9vw;
+        font-size: 1.2rem;
+    }
+
+
+    .signout p{
+        font-size: 0.7rem;
+        margin-right: 0.1rem;
+    }
+    .signout-icon{
+        margin-top: 0.7vh;
+    }
+
+}
+
+@media(max-width: 310px)
+{
+
+    .user-icon{
+        font-size: 1rem;
+    }
+
+    .signout p{
+        font-size: 0.6rem;
+    }
+
+    .signout-icon{
+        font-size: 0.5rem;
+        margin-bottom: 0.145rem;
+    }
+
+}

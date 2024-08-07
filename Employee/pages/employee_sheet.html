@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/search-addbtn.css">
+</head>
+
+<body>
+
+    <div class="nav_bar">
+        <nav>
+
+            <a href="#" class="nav-logo">
+                <i class="fa-brands fa-magento logo"></i>
+            </a>
+
+
+            <ul class="list">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user user-icon"></i>
+                    </a>
+                </li>
+
+                <span class="right-navicons">
+
+                    <li>
+                        <a href="../pages/home.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+
+                    <hr>
+
+                    <li>
+
+                        <i class="fa fa-user-circle usercircle-icon" onclick="toggleMenu()"></i>
+
+                    </li>
+                </span>
+            </ul>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-subMenu">
+                        <a class="profile-logout" href="#">
+                            <p>Profile</p>
+                        </a>
+
+                        <a class="profile-logout" href="#">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul class="list">
+                    <li class="list_item home">
+                        <a class="pages" href="../pages/home.html">
+
+                            <i class="icons fa-solid fa-house"></i>
+
+                            <span class="page_name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="pages" href="../pages/employee_sheet.html">
+
+                            <i class="icons fa-solid fa-user"></i>
+
+                            <span class="page_name">Employee</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="pages" href="../pages/salary_sheet.html">
+
+                            <i class="icons fa-solid fa-sheet-plastic"></i>
+
+                            <span class="page_name">Salary</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="pages" href="../pages/attendance.html">
+
+                            <i class="icons fa-solid fa-person-circle-check"></i>
+
+                            <span class="page_name">Attendance</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="pages" href="../pages/expense.html">
+                            <i class="icons fa-solid fa-dollar-sign"></i>
+                            <span class="page_name">Expense</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+        </div>
+
+        <div class="main_content">
+            <div class="search-add">
+                <div class="search">
+                    <input type="text" id="search" placeholder="Search">
+                    <button type="button" class="btn-search">
+                        <i class="fa fa-search search-icon"></i>
+                    </button>
+                </div>
+                <!-- <div class="months">
+                    <form action="">
+                        <label class="select">Select a month:</label>
+                        <select name="months" id="months">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </form>
+                </div> -->
+
+                <div class="addEmployee">
+                    <a href="#">
+                        <button type="button" class="btn-add">
+                            Add Employee
+                            <i class="fa fa-user-plus" style="color: black;"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="table">
+                <table class="employee_table">
+                    <thead>
+
+                        <tr class="table_head">
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Working Day</th>
+                            <th>Attendance</th>
+                            <th>Number</th>
+                            <th>Advance</th>
+                            <th>Absents</th>
+                            <th>Salary</th>
+                            <th>Current Salary</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+        
+        
+                        <tr>
+                            <td class="col1">Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+        
+                        <tr>
+                            <td class="col1">Berglunds snabbköp</td>
+                            <td>Christina Berglund</td>
+                            <td>Sweden</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Centro</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+        
+                        <tr>
+                            <td>haris.khan133</td>
+                            <td>haris khan</td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td></td>
+                            <td>9875462135520</td>
+                            <td>1000000</td>
+                            <td>jamal nawaz jameel</td>
+                            <td>1000000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>haris.khan133</td>
+                            <td>haris khan</td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td></td>
+                            <td>9875462135520</td>
+                            <td>1000000</td>
+                            <td>jamal nawaz jameel</td>
+                            <td>1000000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>haris.khan133</td>
+                            <td>haris khan</td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td></td>
+                            <td>9875462135520</td>
+                            <td>1000000</td>
+                            <td>jamal nawaz jameel</td>
+                            <td>1000000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Centro</td>
+                            <td>Francisco Chang</td>
+                            <td>snndnjnjnjwndjwn@gmail.com</td>
+                            <td>Monday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>100000000</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+        
+                    </tbody>
+        
+        
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../css/fontawesome-icons/icons.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+
+</html>
