@@ -17,22 +17,23 @@
     top: 0;
     width: 100%;
     background-color: #fff;
-    height: 9vh;
+    height: 7vh;
     display: flex;
     align-items: center; 
     box-shadow: 0px 0px 18px 10px rgba(0,0,0,0.3);
+    z-index: 10;
 }
 
 .nav-logo{
     background-color: #339ffd;
-    width: 6.4vw;
-    height: 9vh;
+    width: 4.2vw;
+    height: 7vh;
     text-align: center;
 }
 
 .nav-logo .logo{    
-    font-size: 2.5vw;
-    margin: 1.5vh;
+    font-size: 2vw;
+    margin: 1.3vh;
     color: white;
 }
 
@@ -45,11 +46,23 @@
     padding: 0 2vw;
 } 
 
-
-
-.user-icon {
+.top-pagename{
+    display: flex;
+    text-decoration: none;
     color: black;
+}
+.icon {
     font-size: 1.5rem;
+}
+
+.top-pagename p{
+    margin-left: 0.5vw;
+    margin-top: 0vh;
+    font-size: 1.3rem;
+}
+
+.top-pagename:hover{
+    color: #339ffd;
 }
 
 .right-navicons{
@@ -62,12 +75,15 @@
     color: black;
 }
 
+.right-navicons .fa-house:hover{
+    color:#339ffd;
+}
+
 .right-navicons hr{
     margin-left: 1vw;
     height: 4vh;
     border: 1px solid rgb(172, 172, 172);
 }
-
 
 .usercircle-icon{
     color: #d5d0e2;
@@ -92,10 +108,10 @@
 }
 
 .sub-menu{
-    background: #292b2c;
+    background: #d8e5ec;
     /* color: white; */
     padding: 1.5vh;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 .user-subMenu{
@@ -105,23 +121,21 @@
     
 }
 
-.user-subMenu .profile-logout{
-    /* text-decoration: none; */
-    color: white;
+.profile-logout{
+    text-decoration: none;
     line-height: 2rem;
-}
-
-.profile-logout p{
+    color:#339ffd;
     font-weight: 400;
     font-size: 1rem;
 }
 
 .profile-logout:hover p{
+    text-decoration: underline;
     font-weight: 600;
 }
 
 
-@media(max-width: 1125px)
+/* @media(max-width: 1125px)
 {
     .user-icon{
         font-size: 1.7rem;
@@ -228,4 +242,4 @@
         margin-bottom: 0.145rem;
     }
 
-}
+} */

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/table.css">
+</head>
+
+<body>
+
+    <div id="blur">
+        <div class="nav_bar">
+            <nav>
+
+                <a href="../pages/home.html" class="nav-logo">
+                    <i class="fa-brands fa-magento logo"></i>
+                </a>
+
+
+                <ul class="list">
+                    <li>
+                        <a href="../pages/role.html" class="top-pagename">
+                            <i class="icon fa-solid fa-users-line"></i>
+                            <p>Role</p>
+                        </a>
+                    </li>
+
+                    <span class="right-navicons">
+
+                        <li>
+                            <a href="../pages/home.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+
+                            <i class="fa fa-user-circle usercircle-icon" onclick="toggleMenu()"></i>
+
+                        </li>
+                    </span>
+                </ul>
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-subMenu">
+                            <a class="profile-logout" href="#">
+                                <p>Profile</p>
+                            </a>
+
+                            <a class="profile-logout" href="../pages/login.html">
+                                <p>Logout</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul class="list">
+                        <li class="list_item home">
+                            <a class="pages" href="../pages/home.html">
+
+                                <i class="icons fa-solid fa-house"></i>
+
+                                <span class="page_name">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="list_item">
+                            <a class="pages" href="../pages/employee_sheet.html">
+
+                                <i class="icons fa-solid fa-user"></i>
+
+                                <span class="page_name">Employee</span>
+                            </a>
+                        </li>
+
+                        <li class="list_item">
+                            <a class="pages" href="../pages/salary_sheet.html">
+                                <i class="icons fa-solid fa-dollar-sign"></i>
+                                <span class="page_name">Salary</span>
+                            </a>
+                        </li>
+
+                        <li class="list_item attendance-pages">
+
+                            <div class="pages">
+                                <i class="icons fa-solid fa-person-circle-check"></i>
+                                <span class="page_name">Attendance</span>
+
+                                <ul class="attendance-page-list">
+                                    <li class="list_item">
+                                        <a href="../pages/attendance-daily.html" class="pages">
+                                            <i class="icons fa-solid fa-person-circle-check"></i>
+                                            <span class="page_name">Daily</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list_item">
+                                        <a href="../pages/attendance-monthly.html"" class=" pages">
+                                            <i class="icons fa-solid fa-person-circle-check"></i>
+                                            <span class="page_name">Monthly</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li class="list_item">
+                            <a class="pages" href="../pages/expense.html">
+                                <i class="icons fa-solid fa-sack-dollar"></i>
+                                <span class="page_name">Expense</span>
+                            </a>
+                        </li>
+
+                        <li class="list_item settings-page">
+                            <div class="pages">
+                                <i class="icons fa-solid fa-gear"></i>
+                                <span class="page_name">Settings</span>
+
+                                <ul class="settings-page-list">
+                                    <li class="list_item">
+                                        <a href="../pages/role.html" class="pages">
+                                            <i class="icons fa-solid fa-users-line"></i>
+                                            <span class="page_name">Role</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list_item">
+                                        <a href="../pages/company.html" class="pages">
+                                            <i class="icons fa-solid fa-users-line"></i>
+                                            <span class="page_name">Company</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+            </div>
+
+            <div class="employee_sheet_content">
+                <div class="search-add">
+                    <div class="search">
+                        <input type="text" id="search" placeholder="Search">
+                        <button type="button" class="btn-search">
+                            <i class="fa fa-search search-icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="add">
+                        <a href="#" onclick="toggleadd()">
+                            <button type="button" class="btn">
+                                Add Role
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="table">
+                    <table class="employee_table">
+                        <thead>
+
+                            <tr class="table_head">
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                   
+                                </td>
+                                <td>
+                                   
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+
+                                </td>
+
+                            </tr>
+
+
+
+
+                        </tbody>
+
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popupadd">
+        <form id="role-company">
+            <label class="data">
+                <p>Role</p>
+            </label>
+            <input type="text" id="inputdata" placeholder="Role">
+        </form>
+
+        <div>
+
+            <a class="popup-btn" href="../pages/role_demo.html" onclick="toggleadd()">
+                <button type="button" class="btn btn-left">
+                    Add
+                </button>
+            </a>
+
+            <a class="popup-btn" href="../pages/role_demo.html" onclick="toggleadd()">
+                <button type="button" class="btn btn-right">
+                    Cancel
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <script src="../css/fontawesome-icons/icons.js"></script>
+    <script src="../js/profileicon_dropdown.js"></script>
+    <script src="../js/popup_msg(add).js"></script>
+</body>
+
+</html>

@@ -18,10 +18,148 @@ body {
     
 }
 
+.employee_sheet_content {
+    display: flex;
+    flex-direction: column;
+    width: 96vw;
+    margin-top: 30vh;
+    margin-left: 4vw;
+    /* position: fixed; */
+}
+
+.search-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5vw;
+}
+
+.search-company-calender-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5vw;
+}
+
+.search-calender{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0.5vw;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.search #search {
+    font-size: 1.4rem;
+    width: 20vw;
+    height: 5.5vh;
+    border-radius: 8px;
+    /* margin: 10px 34.5vw; */
+    padding: 0.4rem;
+    border: 3px solid rgb(206, 204, 204);
+    
+    
+}
+
+.search ::placeholder {
+    font-weight: 300;
+    color: black;
+}
+
+.search-icon{
+    color:white; 
+    font-size: 1.5rem;
+}
+
+
+.search .btn-search {
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    background: #339ffd;
+    cursor: pointer;
+}
+
+.btn-search:hover{
+    background-color: #1475ca;
+}
+
+.calender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 18vw;
+}
+
+.Calender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-left: 18vw; */
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-left: 18vw; */
+}
+
+.select {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.calender input {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 3px solid rgb(206, 204, 204)
+}
+
+#months {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 3px solid rgb(206, 204, 204)
+}
+
+#company {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 3px solid rgb(206, 204, 204)
+}
+
+
+.btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background:  #339ffd;
+    color: white;
+    cursor: pointer;
+    /* border: 1px; */
+}
+
+.btn:hover{
+    background: #1475ca;
+}
 
 .table {
     margin: 0 0.5vw;
-    margin-top: 10vh;
+    margin-top: 1vh;
     
 }
 
@@ -64,8 +202,8 @@ body {
 
 .employee_table tr td:hover{
     
-    background-color: #6c7ae0;
-    color: white;
+    background-color: #b8c3ff;
+    color: black;
 
 }
 
@@ -76,3 +214,158 @@ body {
 .employee_table tr th:hover{
     background-color: rgb(66, 73, 66);
 }
+
+.employee_table .button{
+    text-decoration: none;
+    line-height: 2rem;
+    color:#339ffd;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.employee_table .button:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popupdelete{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 30%;
+    left: 38%;
+    transform: (-50%,-50%);
+    width: 32rem;
+    height: 14rem;
+    padding: 4rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupdelete.active{
+    top:30%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popup-btn{
+    text-decoration: none;
+}
+#popupdelete p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#popupdelete .btn{
+    margin-top: 3vh;
+}
+
+.btn-right{
+    margin-left: 2vw;
+    padding: 0.5rem 1.1rem;
+}
+
+#role-company{
+    display: flex;
+    flex-direction: column;
+}
+
+#role-company .data {
+    margin-left: 0.2vw;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+#role-company #inputdata {
+    font-size: 1.5rem;
+    width: 24vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    border: 3px solid rgb(206, 204, 204);
+}
+
+#inputdata::placeholder {
+    color: black;
+    font-weight: 300;
+}
+
+#popupadd{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 30%;
+    left: 38%;
+    transform: (-50%,-50%);
+    width: 32rem;
+    height: 17rem;
+    padding: 2.5rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupadd.active{
+    top:30%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupadd .btn{
+    margin-top: 3vh;
+}
+
+#popupedit{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 30%;
+    left: 38%;
+    transform: (-50%,-50%);
+    width: 32rem;
+    height: 17rem;
+    padding: 2.5rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupedit.active{
+    top:30%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupedit .btn{
+    margin-top: 3vh;
+}
+
+#popupadd .btn-left{
+    padding: 0.5rem 2.2rem;
+}
+
+#popupedit .btn-left{
+    padding: 0.5rem 1.9rem;
+}
+

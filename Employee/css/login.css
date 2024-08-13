@@ -16,20 +16,19 @@
 
 .header {
     text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 600;
     margin-top: 22vh;
-    color: rgb(123, 122, 122);
-
+    color: rgb(126, 117, 117);
 }
 
 .credentials {
     /* text-align: center; */
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin-top: 4vh;
     margin-bottom: 0vh;
-    margin-left: 35.5vw;
+    margin-left: 34vw;
     color: black;
 
 }
@@ -37,10 +36,10 @@
 
 #input_credentials {
     /* text-align: center; */
-    font-size: 1.6rem;
-    width: 27vw;
+    font-size: 1.5rem;
+    width: 30vw;
     border-radius: 10px;
-    margin: 1vh 35.5vw;
+    margin: 1vh 34vw;
     padding: 12px;
     border: 3px solid rgb(206, 204, 204);
 
@@ -52,21 +51,26 @@
 }
 
 #credential-form ::placeholder {
-    color: gray;
+    color: black;
     font-weight: 300;
     /* border: solid gray; */
 }
 
 
 .forgot_password {
-    /* text-decoration: none; */
+    text-decoration: none;
     font-size: 1.3em;
     font-weight: 500;
-    color: #648DDB;
-    margin-left: 36vw;
+    color: #339ffd;
+    margin-left: 34vw;
     margin-top: 3.5vh;
     /* flex-direction: row; */
 
+}
+
+.forgot_password:hover{
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 
@@ -75,16 +79,20 @@
     font-weight: 500;
     border-radius: 15px;
     border: 2.75px solid black;
-    padding: 0px 25px;
-    background-color: rgb(2, 117, 249);
+    padding: 8px 25px;
+    background-color: #339ffd;
     color: white;
-    margin-left: 14vw;
+    margin-left: 14.1vw;
     cursor: pointer;
 
 }
 
+.btn:hover{
+    background-color: #1475ca;
+}
 
-@media (max-width: 2048px) {
+
+/* @media (max-width: 2048px) {
     .btn {
         margin-left: 13vw;
     }
@@ -213,7 +221,6 @@
 
     .forgot_password {
         margin-left: 30.5vw;
-        /* font-size: 1rem; */
     }
 }
 
@@ -530,4 +537,4 @@
         margin-left: 18vw;
         font-size: 0.6rem;
     }
-}
+} */

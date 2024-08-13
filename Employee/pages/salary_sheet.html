@@ -22,9 +22,9 @@
 
             <ul class="list">
                 <li>
-                    <a href="../pages/employee_sheet.html" class="top-pagename">
-                        <i class="icon fa-solid fa-user "></i>
-                        <p>Employee</p>
+                    <a href="../pages/salary_sheet.html" class="top-pagename">
+                        <i class="icon fa-solid fa-dollar-sign "></i>
+                        <p>Salary</p>
                     </a>
                 </li>
 
@@ -153,7 +153,7 @@
         </div>
 
         <div class="employee_sheet_content">
-            <div class="search-add">
+            <div class="search-company-calender-add">
                 <div class="search">
                     <input type="text" id="search" placeholder="Search">
                     <button type="button" class="btn-search">
@@ -161,14 +161,45 @@
                     </button>
                 </div>
 
-                <div class="addEmployee">
-                    <a href="../pages/create_employee.html">
+                <div class="company">
+                    <form>
+                        <label class="select">Select a Company:</label>
+                        <select id="company">
+                            <option>Company 1</option>
+                            <option>Company 2</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="Calender">
+                    <form>
+                        <label class="select">Select a Month:</label>
+                        <select id="months">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="add">
+                    <a href="#">
                         <button type="button" class="btn">
-                            Add Employee
+                            Print Salary
                         </button>
                     </a>
                 </div>
             </div>
+
 
             <div class="table">
                 <table class="employee_table">
@@ -177,88 +208,28 @@
                         <tr class="table_head">
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Cnic</th>
-                            <th>Number</th>
-                            <th>Company</th>
-                            <th>Salary</th>
-                            <th>Role</th>
-                            <th>Reporter</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
+                            <th>Gross Salary</th>
+                            <th>Net Salary</th>
+                            <th>Status</th>
+                            <th>Paid</th>
                         </tr>
                     </thead>
-        
+
                     <tbody>
-        
-        
+
+
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                             <td>
-                                
+                                <a href="#" class="button">
+                                    <p>Paid</p>
+                                </a>
                             </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-        
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-        
-                        <tr>
-                            <td></td>
-                            
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-        
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
+
                         </tr>
 
                         <tr>
@@ -268,77 +239,47 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
+
                         </tr>
 
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
-                            
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
+
                         </tr>
-        
-                        <tr>
-                            <td></td>
-                            
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-        
+
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
-                            
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                
-                            </td>
-                            <td>
-                                
-                            </td>
+
                         </tr>
-        
-        
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+
+
                     </tbody>
-        
-        
+
+
                 </table>
             </div>
+
         </div>
     </div>
     <script src="../css/fontawesome-icons/icons.js"></script>
