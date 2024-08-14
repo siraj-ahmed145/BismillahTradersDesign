@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div id="blur">
         <div class="nav_bar">
             <nav>
@@ -22,9 +23,9 @@
 
                 <ul class="list">
                     <li>
-                        <a href="../pages/company.html" class="top-pagename">
-                            <i class="icon fa-solid fa-users-line"></i>
-                            <p>Company</p>
+                        <a href="../pages/salary_sheet.html" class="top-pagename">
+                            <i class="icon fa-solid fa-dollar-sign "></i>
+                            <p>Salary</p>
                         </a>
                     </li>
 
@@ -68,27 +69,27 @@
                     <ul class="list">
                         <li class="list_item home">
                             <a class="pages" href="../pages/home.html">
-    
+
                                 <i class="icons fa-solid fa-house"></i>
-    
+
                                 <span class="page_name">Home</span>
                             </a>
                         </li>
-    
+
                         <li class="list_item">
                             <a class="pages" href="../pages/employee_sheet.html">
-    
+
                                 <i class="icons fa-solid fa-user"></i>
-    
+
                                 <span class="page_name">Employee</span>
                             </a>
                         </li>
-    
+
                         <li class="list_item salary_sheet-pages">
                             <a class="pages" href="../pages/salary_sheet.html">
                                 <i class="icons fa-solid fa-dollar-sign"></i>
                                 <span class="page_name">Salary</span>
-    
+
                                 <ul class="salary_sheet-page-list">
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_advance.html" class="pages">
@@ -96,21 +97,21 @@
                                             <span class="page_name">Advance</span>
                                         </a>
                                     </li>
-    
+
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_overtime.html" class=" pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
                                             <span class="page_name">Over Time</span>
                                         </a>
                                     </li>
-    
+
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_fuel.html" class="pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
                                             <span class="page_name">Fuel</span>
                                         </a>
                                     </li>
-    
+
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_expense.html" class=" pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
@@ -120,13 +121,13 @@
                                 </ul>
                             </a>
                         </li>
-    
+
                         <li class="list_item attendance-pages">
-    
+
                             <div class="pages">
                                 <i class="icons fa-solid fa-person-circle-check"></i>
                                 <span class="page_name">Attendance</span>
-    
+
                                 <ul class="attendance-page-list">
                                     <li class="list_item">
                                         <a href="../pages/attendance-daily.html" class="pages">
@@ -134,7 +135,7 @@
                                             <span class="page_name">Daily</span>
                                         </a>
                                     </li>
-    
+
                                     <li class="list_item">
                                         <a href="../pages/attendance-monthly.html"" class=" pages">
                                             <i class="icons fa-solid fa-person-circle-check"></i>
@@ -143,21 +144,21 @@
                                     </li>
                                 </ul>
                             </div>
-    
+
                         </li>
-    
+
                         <li class="list_item">
                             <a class="pages" href="../pages/expense.html">
                                 <i class="icons fa-solid fa-sack-dollar"></i>
                                 <span class="page_name">Expense</span>
                             </a>
                         </li>
-    
+
                         <li class="list_item settings-page">
                             <div class="pages">
                                 <i class="icons fa-solid fa-gear"></i>
                                 <span class="page_name">Settings</span>
-    
+
                                 <ul class="settings-page-list">
                                     <li class="list_item">
                                         <a href="../pages/role.html" class="pages">
@@ -165,7 +166,7 @@
                                             <span class="page_name">Role</span>
                                         </a>
                                     </li>
-    
+
                                     <li class="list_item">
                                         <a href="../pages/company.html" class="pages">
                                             <i class="icons fa-solid fa-users-line"></i>
@@ -175,15 +176,15 @@
                                 </ul>
                             </div>
                         </li>
-    
+
                     </ul>
-    
-    
+
+
                 </nav>
             </div>
 
             <div class="employee_sheet_content">
-                <div class="search-add">
+                <div class="search-company-calender-add">
                     <div class="search">
                         <input type="text" id="search" placeholder="Search">
                         <button type="button" class="btn-search">
@@ -191,15 +192,44 @@
                         </button>
                     </div>
 
+                    <div class="company">
+                        <form>
+                            <label class="select">Select a Company:</label>
+                            <select id="company">
+                                <option>Company 1</option>
+                                <option>Company 2</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="Calender">
+                        <form>
+                            <label class="select">Select a Month:</label>
+                            <select id="months">
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </form>
+                    </div>
+
                     <div class="add">
                         <a href="#">
-                            <button type="button" class="btn" onclick="toggleadd()">
-                                Add Company
+                            <button type="button" class="btn" onclick="toggleaddsalary()">
+                                Add Expense Amount
                             </button>
                         </a>
                     </div>
                 </div>
-
 
 
                 <div class="table">
@@ -209,8 +239,10 @@
                             <tr class="table_head">
                                 <th>Id</th>
                                 <th>Name</th>
-                                <th>Edit</th>
+                                <th>Company</th>
+                                <th>Expense</th>
                                 <th>Delete</th>
+
                             </tr>
                         </thead>
 
@@ -218,27 +250,16 @@
 
 
                             <tr>
-                                <td>abc123</td>
+                                <td>ahmed.khan123</td>
+                                <td>Ahmed Khan</td>
                                 <td>Bismillah Traders</td>
-                                <td>
-                                    <a href="#" class="button" onclick="toggleedit()">
-                                        <p>Edit</p>
-                                    </a>
-                                </td>
+                                <td>100000</td>
                                 <td>
                                     <a href="#" class="button" onclick="toggledelete()">
                                         <p>Delete</p>
                                     </a>
                                 </td>
-                            </tr>
 
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-
-                                </td>
 
                             </tr>
 
@@ -246,9 +267,9 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>
+                                <td></td>
+                                <td></td>
 
-                                </td>
 
                             </tr>
 
@@ -256,12 +277,31 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>
+                                <td></td>
+                                <td></td>
 
-                                </td>
 
                             </tr>
 
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+
+                            </tr>
 
 
 
@@ -275,47 +315,34 @@
         </div>
     </div>
 
-    <div id="popupadd">
-        <form id="role-company">
-            <label class="data">
-                <p>Company</p>
+    <div id="popupaddsalary">
+        <div id="salary-employee">
+            <label class="select">
+                <p>Employee:</p>
             </label>
-            <input type="text" id="inputdata" placeholder="Company">
-        </form>
+            <select id="employee">
+                <option>Employee 1</option>
+                <option>Employee 2</option>
+                
+            </select>
+        </div>
 
-        <div>
+        <div id="salary-amount">
+            <label class="data">
+                <p>Expense Amount</p>
+            </label>
+            <input type="text" id="inputdata" placeholder="Expense Amount">
+        </div>
 
-            <a class="popup-btn" href="#" onclick="toggleadd()">
+        <div class="salary-popup-btn">
+
+            <a class="popup-btn" href="#" onclick="toggleaddsalary()">
                 <button type="button" class="btn btn-left">
                     Add
                 </button>
             </a>
 
-            <a class="popup-btn" href="#" onclick="toggleadd()">
-                <button type="button" class="btn btn-right">
-                    Cancel
-                </button>
-            </a>
-        </div>
-    </div>
-
-    <div id="popupedit">
-        <form id="role-company">
-            <label class="data">
-                <p>Company</p>
-            </label>
-            <input type="text" id="inputdata" placeholder="Bismillah Traders">
-        </form>
-
-        <div>
-
-            <a class="popup-btn" href="#" onclick="toggleedit()">
-                <button type="button" class="btn btn-left">
-                    Save
-                </button>
-            </a>
-
-            <a class="popup-btn" href="#" onclick="toggleedit()">
+            <a class="popup-btn" href="#" onclick="toggleaddsalary()">
                 <button type="button" class="btn btn-right">
                     Cancel
                 </button>
@@ -328,7 +355,7 @@
 
         <div>
 
-            <a class="popup-btn" href="../pages/company.html" onclick="toggledelete()">
+            <a class="popup-btn" href="../pages/salary_sheet_expense.html" onclick="toggledelete()">
                 <button type="button" class="btn">
                     Yes
                 </button>
@@ -343,12 +370,10 @@
 
     </div>
 
-    
     <script src="../css/fontawesome-icons/icons.js"></script>
     <script src="../js/profileicon_dropdown.js"></script>
-    <script src="../js/popup_msg(add).js"></script>
+    <script src="../js/popup_msg(add-salary).js"></script>
     <script src="../js/popup_msg(delete).js"></script>
-    <script src="../js/popup_msg(edit).js"></script>
 </body>
 
 </html>

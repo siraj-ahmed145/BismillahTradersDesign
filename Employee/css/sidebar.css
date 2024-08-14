@@ -100,7 +100,7 @@
 .attendance-pages .attendance-page-list{
     display: none;
     background-color: #292b2c;
-    margin-left: 2.6vw;
+    margin-left: 2.4vw;
     margin-top: 8vh;
 
 }
@@ -110,11 +110,25 @@
     
 }
 
+.salary_sheet-pages .salary_sheet-page-list{
+    display: none;
+    background-color: #292b2c;
+    margin-left: 5.7vw;
+    margin-top: 24vh;
+
+}
+
+.salary_sheet-pages:hover .salary_sheet-page-list{
+    display: block;
+    
+}
+
+
 .settings-page .settings-page-list{
     display: none;
     background-color: #292b2c;
-    margin-left: 4.2vw;
-    margin-top: 8vh;
+    margin-left: 4.1vw;
+    margin-top: 8.1vh;
 }
 
 .settings-page:hover .settings-page-list{

@@ -362,10 +362,86 @@ body {
 }
 
 #popupadd .btn-left{
-    padding: 0.5rem 2.2rem;
+    padding: 0.5rem 2.1rem;
 }
 
 #popupedit .btn-left{
     padding: 0.5rem 1.9rem;
 }
 
+#popupaddsalary{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 25%;
+    left: 36%;
+    transform: (-50%,-50%);
+    width: 32rem;
+    height: 21rem;
+    padding: 2.5rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupaddsalary.active{
+    top:25%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#salary-employee{
+    display: flex;
+    align-items: center;
+    margin-right: 8vw;
+}
+
+#salary-employee .select{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 0.2vw;
+}
+
+#employee {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 8px;
+    margin-left: 0.3vw;
+    border: 3px solid rgb(206, 204, 204);
+}
+
+#salary-amount{
+    align-items: center;
+    justify-content: center;
+}
+
+#salary-amount .data p{
+    margin-left: 0.2vw;
+    margin-top: 4vh;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+#salary-amount #inputdata {
+    font-size: 1.5rem;
+    width: 24vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    border: 3px solid rgb(206, 204, 204);
+}
+
+.salary-popup-btn{
+    margin-top: 2vh;
+}
+
+#popupaddsalary .btn-left{
+    padding: 0.5rem 2.1rem;
+}
