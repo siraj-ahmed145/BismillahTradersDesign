@@ -13,6 +13,8 @@
 <body>
 
     <div id="blur">
+
+
         <div class="nav_bar">
             <nav>
 
@@ -23,9 +25,9 @@
 
                 <ul class="list">
                     <li>
-                        <a href="../pages/salary_sheet_expense.html" class="top-pagename">
-                            <i class="icon fa-solid fa-dollar-sign "></i>
-                            <p>Expense Salary Sheet</p>
+                        <a href="../pages/employee_sheet_demo(delete).html" class="top-pagename">
+                            <i class="icon fa-solid fa-user "></i>
+                            <p>Employee Sheet</p>
                         </a>
                     </li>
 
@@ -69,27 +71,27 @@
                     <ul class="list">
                         <li class="list_item home">
                             <a class="pages" href="../pages/home.html">
-
+    
                                 <i class="icons fa-solid fa-house"></i>
-
+    
                                 <span class="page_name">Home</span>
                             </a>
                         </li>
-
+    
                         <li class="list_item">
                             <a class="pages" href="../pages/employee_sheet.html">
-
+    
                                 <i class="icons fa-solid fa-user"></i>
-
+    
                                 <span class="page_name">Employee</span>
                             </a>
                         </li>
-
+    
                         <li class="list_item salary_sheet-pages">
                             <a class="pages" href="../pages/salary_sheet.html">
                                 <i class="icons fa-solid fa-dollar-sign"></i>
                                 <span class="page_name">Salary</span>
-
+    
                                 <ul class="salary_sheet-page-list">
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_advance.html" class="pages">
@@ -97,21 +99,21 @@
                                             <span class="page_name">Advance</span>
                                         </a>
                                     </li>
-
+    
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_overtime.html" class=" pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
                                             <span class="page_name">Over Time</span>
                                         </a>
                                     </li>
-
+    
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_fuel.html" class="pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
                                             <span class="page_name">Fuel</span>
                                         </a>
                                     </li>
-
+    
                                     <li class="list_item">
                                         <a href="../pages/salary_sheet_expense.html" class=" pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
@@ -121,13 +123,13 @@
                                 </ul>
                             </a>
                         </li>
-
+    
                         <li class="list_item attendance-pages">
-
+    
                             <div class="pages">
                                 <i class="icons fa-solid fa-person-circle-check"></i>
                                 <span class="page_name">Attendance</span>
-
+    
                                 <ul class="attendance-page-list">
                                     <li class="list_item">
                                         <a href="../pages/attendance-daily.html" class="pages">
@@ -135,7 +137,7 @@
                                             <span class="page_name">Daily</span>
                                         </a>
                                     </li>
-
+    
                                     <li class="list_item">
                                         <a href="../pages/attendance-monthly.html"" class=" pages">
                                             <i class="icons fa-solid fa-person-circle-check"></i>
@@ -144,21 +146,21 @@
                                     </li>
                                 </ul>
                             </div>
-
+    
                         </li>
-
+    
                         <li class="list_item">
                             <a class="pages" href="../pages/expense.html">
                                 <i class="icons fa-solid fa-sack-dollar"></i>
                                 <span class="page_name">Expense</span>
                             </a>
                         </li>
-
+    
                         <li class="list_item settings-page">
                             <div class="pages">
                                 <i class="icons fa-solid fa-gear"></i>
                                 <span class="page_name">Settings</span>
-
+    
                                 <ul class="settings-page-list">
                                     <li class="list_item">
                                         <a href="../pages/role.html" class="pages">
@@ -166,7 +168,7 @@
                                             <span class="page_name">Role</span>
                                         </a>
                                     </li>
-
+    
                                     <li class="list_item">
                                         <a href="../pages/company.html" class="pages">
                                             <i class="icons fa-solid fa-users-line"></i>
@@ -176,15 +178,15 @@
                                 </ul>
                             </div>
                         </li>
-
+    
                     </ul>
-
-
+    
+    
                 </nav>
             </div>
 
             <div class="employee_sheet_content">
-                <div class="search-company-calender-add">
+                <div class="search-add">
                     <div class="search">
                         <input type="text" id="search" placeholder="Search">
                         <button type="button" class="btn-search">
@@ -192,45 +194,14 @@
                         </button>
                     </div>
 
-                    <div class="company">
-                        <form>
-                            <label class="select">Select a Company:</label>
-                            <select id="company">
-                                <option>Company 1</option>
-                                <option>Company 2</option>
-                            </select>
-                        </form>
-                    </div>
-
-                    <div class="Calender">
-                        <form>
-                            <label class="select">Select a Month:</label>
-                            <select id="months">
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                        </form>
-                    </div>
-
-                    <div class="add">
-                        <a href="#">
-                            <button type="button" class="btn" onclick="toggleaddsalary()">
-                                Add Expense Amount
+                    <div class="addEmployee">
+                        <a href="../pages/create_employee3.html">
+                            <button type="button" class="btn">
+                                Add Employee
                             </button>
                         </a>
                     </div>
                 </div>
-
 
                 <div class="table">
                     <table class="employee_table">
@@ -239,10 +210,18 @@
                             <tr class="table_head">
                                 <th>Id</th>
                                 <th>Name</th>
+                                <th>Cnic</th>
+                                <th>Number</th>
                                 <th>Company</th>
-                                <th>Expense</th>
+                                <th>Salary</th>
+                                <th>Role</th>
+                                <th>Reporter</th>
+                                <th>Appoint Date</th>
+                                <th>Resign Date</th>
+                                <th>Status</th>
+                                <th>Edit</th>
                                 <th>Delete</th>
-
+                                
                             </tr>
                         </thead>
 
@@ -250,13 +229,18 @@
 
 
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-
+                                <td>ahmed.khan123</td>
+                                <td>Ahmed Khan</td>
+                                <td>45802-45558599-7</td>
+                                <td>+92300-000030303</td>
+                                <td>Company 1</td>
+                                <td>100000</td>
+                                <td>ABC</td>
+                                <td>XYZ</td>
+                                <td>15/8/2023</td>
+                                <td>15/8/2024</td>
+                                <td>Inactive</td>
+                                
                             </tr>
 
                             <tr>
@@ -265,8 +249,17 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
 
-
+                                </td>
+                                
                             </tr>
 
                             <tr>
@@ -275,8 +268,17 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
 
-
+                                </td>
+                                
                             </tr>
 
                             <tr>
@@ -285,8 +287,17 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
 
-
+                                </td>
+                                
                             </tr>
 
                             <tr>
@@ -295,59 +306,88 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
 
-
+                                </td>
+                                
                             </tr>
 
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
 
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+
+                                </td>
+                            </tr>
+
+                           
 
                         </tbody>
 
 
                     </table>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div id="popupaddsalary">
-        <div id="salary-employee">
-            <label class="select">
-                <p>Employee:</p>
-            </label>
-            <select id="employee">
-                <option>Employee 1</option>
-                <option>Employee 2</option>
-                
-            </select>
-        </div>
+    <div id="popupdelete">
+        <p>Are you sure you want to delete it?</p>
 
-        <div id="salary-amount">
-            <label class="data">
-                <p>Expense Amount</p>
-            </label>
-            <input type="text" id="inputdata" placeholder="Expense Amount">
-        </div>
+        <div>
 
-        <div class="salary-popup-btn">
-
-            <a class="popup-btn" href="../pages/salary_sheet_expense_demo.html" onclick="toggleaddsalary()">
-                <button type="button" class="btn btn-left">
-                    Add
+            <a class="popup-btn" href="../pages/employee_sheet.html" onclick="toggledelete()">
+                <button type="button" class="btn">
+                    Yes
                 </button>
             </a>
 
-            <a class="popup-btn" href="#" onclick="toggleaddsalary()">
+            <a class="popup-btn" href="#" onclick="toggledelete()">
                 <button type="button" class="btn btn-right">
-                    Cancel
+                    No
                 </button>
             </a>
         </div>
+
     </div>
     <script src="../fontawesome-icons/icons.js"></script>
     <script src="../js/profileicon_dropdown.js"></script>
-    <script src="../js/popup_msg(add-salary).js"></script>
+    <script src="../js/popup_msg(delete).js"></script>
 </body>
 
 </html>

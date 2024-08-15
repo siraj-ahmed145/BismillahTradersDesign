@@ -7,7 +7,7 @@
     <title>XYZ</title>
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/create_employee.css">
+    <link rel="stylesheet" href="../css/employee.css">
 </head>
 
 <body>
@@ -22,9 +22,9 @@
 
             <ul class="list">
                 <li>
-                    <a href="../pages/signup.html" class="top-pagename">
+                    <a href="../pages/edit_employee.html" class="top-pagename">
                         <i class="icon fa-solid fa-user "></i>
-                        <p>Create Employee</p>
+                        <p>Edit Employee</p>
                     </a>
                 </li>
 
@@ -314,11 +314,18 @@
                     </div>
                 </div>
 
-                <div class="attendance">
-                    <form id="attendance">
+                <div class="attendance-calender">
+                    <div id="attendance">
                         <label for="only-option">Attendance</label>
                         <input type="checkbox" id="only-option">
-                    </label>
+                    </div>
+
+                    <div class="calender">
+                        
+                            <label class="select">Appoint Date</label>
+                            <input type="date">
+
+                    </div>
                 </div>
 
                 <div class="cnic-front-back">
@@ -371,7 +378,7 @@
         </div>
 
     </div>
-    <script src="../css/fontawesome-icons/icons.js"></script>
+    <script src="../fontawesome-icons/icons.js"></script>
     <script src="../js/profileicon_dropdown.js"></script>
 </body>
 

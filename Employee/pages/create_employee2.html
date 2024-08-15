@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+
+<body>
+
+    <div class="nav_bar">
+        <nav>
+
+            <a href="../pages/home.html" class="nav-logo">
+                <i class="fa-brands fa-magento logo"></i>
+            </a>
+
+
+            <ul class="list">
+                <li>
+                    <a href="../pages/create_employee2.html" class="top-pagename">
+                        <i class="icon fa-solid fa-user "></i>
+                        <p>Create Employee</p>
+                    </a>
+                </li>
+
+                <span class="right-navicons">
+
+                    <li>
+                        <a href="../pages/home.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+
+                    <hr>
+
+                    <li>
+
+                        <i class="fa fa-user-circle usercircle-icon" onclick="toggleMenu()"></i>
+
+                    </li>
+                </span>
+            </ul>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-subMenu">
+                        <a class="profile-logout" href="#">
+                            <p>Profile</p>
+                        </a>
+
+                        <a class="profile-logout" href="../pages/login.html">
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul class="list">
+                    <li class="list_item home">
+                        <a class="pages" href="../pages/home.html">
+
+                            <i class="icons fa-solid fa-house"></i>
+
+                            <span class="page_name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item">
+                        <a class="pages" href="../pages/employee_sheet.html">
+
+                            <i class="icons fa-solid fa-user"></i>
+
+                            <span class="page_name">Employee</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item salary_sheet-pages">
+                        <a class="pages" href="../pages/salary_sheet.html">
+                            <i class="icons fa-solid fa-dollar-sign"></i>
+                            <span class="page_name">Salary</span>
+
+                            <ul class="salary_sheet-page-list">
+                                <li class="list_item">
+                                    <a href="../pages/salary_sheet_advance.html" class="pages">
+                                        <i class="icons fa-solid fa-dollar-sign"></i>
+                                        <span class="page_name">Advance</span>
+                                    </a>
+                                </li>
+
+                                <li class="list_item">
+                                    <a href="../pages/salary_sheet_overtime.html" class=" pages">
+                                        <i class="icons fa-solid fa-dollar-sign"></i>
+                                        <span class="page_name">Over Time</span>
+                                    </a>
+                                </li>
+
+                                <li class="list_item">
+                                    <a href="../pages/salary_sheet_fuel.html" class="pages">
+                                        <i class="icons fa-solid fa-dollar-sign"></i>
+                                        <span class="page_name">Fuel</span>
+                                    </a>
+                                </li>
+
+                                <li class="list_item">
+                                    <a href="../pages/salary_sheet_expense.html" class=" pages">
+                                        <i class="icons fa-solid fa-dollar-sign"></i>
+                                        <span class="page_name">Expense</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+
+                    <li class="list_item attendance-pages">
+
+                        <div class="pages">
+                            <i class="icons fa-solid fa-person-circle-check"></i>
+                            <span class="page_name">Attendance</span>
+
+                            <ul class="attendance-page-list">
+                                <li class="list_item">
+                                    <a href="../pages/attendance-daily.html" class="pages">
+                                        <i class="icons fa-solid fa-person-circle-check"></i>
+                                        <span class="page_name">Daily</span>
+                                    </a>
+                                </li>
+
+                                <li class="list_item">
+                                    <a href="../pages/attendance-monthly.html"" class=" pages">
+                                        <i class="icons fa-solid fa-person-circle-check"></i>
+                                        <span class="page_name">Monthly</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="list_item">
+                        <a class="pages" href="../pages/expense.html">
+                            <i class="icons fa-solid fa-sack-dollar"></i>
+                            <span class="page_name">Expense</span>
+                        </a>
+                    </li>
+
+                    <li class="list_item settings-page">
+                        <div class="pages">
+                            <i class="icons fa-solid fa-gear"></i>
+                            <span class="page_name">Settings</span>
+
+                            <ul class="settings-page-list">
+                                <li class="list_item">
+                                    <a href="../pages/role.html" class="pages">
+                                        <i class="icons fa-solid fa-users-line"></i>
+                                        <span class="page_name">Role</span>
+                                    </a>
+                                </li>
+
+                                <li class="list_item">
+                                    <a href="../pages/company.html" class="pages">
+                                        <i class="icons fa-solid fa-users-line"></i>
+                                        <span class="page_name">Company</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+        </div>
+
+        <div class="signup-content">
+            <div class="top-content">
+                <div class="profile-pic">
+                    <img class="image" src="../Images/profile.jpg" alt="">
+                    <div class="browse-pic">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <p>Browse</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="personal-info">
+                    <div class="fname-number">
+                        <form id="fname-number">
+                            <label class="data">
+                                <p>First Name</p>
+                            </label>
+
+                            <input type="text" id="inputdata" placeholder="First Name">
+                        </form>
+
+                        <form id="fname-number">
+                            <label class="data">
+                                <p>Number</p>
+                            </label>
+                            <input type="text" id="inputdata" placeholder="+92312-3457891">
+                        </form>
+                    </div>
+
+                    <div class="lastname-age">
+                        <form id="lastname-age">
+                            <label class="data">
+                                <p">Last Name</p>
+                            </label>
+
+                            <input type="text" id="inputdata" placeholder="Last Name">
+                        </form>
+
+                        <form id="lastname-age">
+                            <label class="data">
+                                <p>Age</p>
+                            </label>
+                            <input type="text" id="inputdata" placeholder="Age">
+                        </form>
+                    </div>
+
+                    <div class="password">
+                        <form id="password">
+                            <label class="data">
+                                <p>Password</p>
+                            </label>
+                            <div class="span">
+
+                                <input type="text" id="inputdata" placeholder="***********">
+                                <!-- <i class="fa-solid fa-eye"></i> -->
+                            </div>
+                        </form>
+
+                        <form id="password">
+                            <label class="data">
+                                <p>Confirm Password</p>
+                            </label>
+                            <div class="span">
+
+                                <input type="text" id="inputdata" placeholder="***********">
+                                <!-- <i class="fa-solid fa-eye"></i> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-content">
+                <div class="cnic-salary">
+                    <form id="cnic-salary">
+                        <label class="data">
+                            <p>CNIC No</p>
+                        </label>
+
+                        <input type="text" id="inputdata" placeholder="45111-2589666663-5">
+                    </form>
+
+                    <form id="cnic-salary">
+                        <label class="data">
+                            <p>Salary</p>
+                        </label>
+
+                        <input type="text" id="inputdata" placeholder="100000">
+                    </form>
+                </div>
+
+                <div class="role-reporter-company">
+                    <div class="role">
+                        <form>
+                            <label class="select">Role</label>
+                            <select id="role">
+                                <option>Role 1</option>
+                                <option>Role 2</option>
+                                <option>Role 3</option>
+                                <option>Role 4</option>
+                                <option>Role 5</option>
+                                <option>Role 6</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="reporter">
+                        <form>
+                            <label class="select">Reporter</label>
+                            <select id="reporter">
+                                <option>Reporter 1</option>
+                                <option>Reporter 2</option>
+                                <option>Reporter 3</option>
+                                <option>Reporter 4</option>
+                                <option>Reporter 5</option>
+                                <option>Reporter 6</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="company">
+                        <form>
+                            <label class="select">Company</label>
+                            <select id="company">
+                                <option>Company 1</option>
+                                <option>Company 2</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="attendance-calender">
+                    <div id="attendance">
+                        <label for="only-option">Attendance</label>
+                        <input type="checkbox" id="only-option">
+                    </div>
+
+                    <div class="calender">
+                        
+                            <label class="select">Appoint Date</label>
+                            <input type="date">
+
+                    </div>
+                </div>
+
+                <div class="cnic-front-back">
+                    <div class="cnic-front">
+                        <p class="text">CNIC Front:</p>
+                        <div class="cnic-pic">
+                            <img src="../Images/cnic-front.jpg" class="image">
+                            <div class="browse-pic">
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <p>Browse</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cnic-back">
+                        <p class="text">CNIC Back:</p>
+                        <div class="cnic-pic">
+                            <img src="../Images/cnic-back.jpg" class="image">
+                            <div class="browse-pic">
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <p>Browse</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-cancel">
+                    <div class="add">
+                        <a href="../pages/employee_sheet_demo.html">
+                            <button type="button" class="btn">
+                                Add
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="cancel">
+                        <a href="../pages/employee_sheet_demo.html">  
+                            <!-- Only Difference between create_employee and create_employee2 -->
+                            <button type="button" class="btn">
+                                Cancel
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../fontawesome-icons/icons.js"></script>
+    <script src="../js/profileicon_dropdown.js"></script>
+</body>
+
+</html>
