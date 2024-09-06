@@ -136,6 +136,30 @@
     
 }
 
+.usermanagement-pages .usermanagement-page-list{
+    display: none;
+    background-color: #292b2c;
+    margin-left: 1.4vw;
+    margin-top: 8vh;
+}
+
+.usermanagement-pages:hover .usermanagement-page-list{
+    display: block;
+    
+}
+
+.company-pages .company-page-list{
+    display: none;
+    background-color: #292b2c;
+    margin-left: 3.2vw;
+    margin-top: 8vh;
+}
+
+.company-pages:hover .company-page-list{
+    display: block;
+    
+}
+
 /* @media(max-width: 1560px)
 {
     .page_name{

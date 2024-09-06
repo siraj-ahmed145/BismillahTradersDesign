@@ -35,6 +35,22 @@ body {
     margin: 0 0.5vw;
 }
 
+.search-category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5vw;
+}
+
+.search-company-role-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0.5vw;
+}
+
 .search-company-calender-add{
     display: flex;
     flex-direction: row;
@@ -54,7 +70,7 @@ body {
 .search {
     display: flex;
     flex-direction: row;
-    
+    margin: 0 0.5vw;
 }
 
 .search #search {
@@ -109,7 +125,21 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* margin-left: 18vw; */
+    
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.role {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
 .select {
@@ -134,6 +164,22 @@ body {
 }
 
 #company {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 3px solid rgb(206, 204, 204)
+}
+
+#category {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 3px solid rgb(206, 204, 204)
+}
+
+#role {
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0.4rem;
@@ -330,6 +376,199 @@ body {
 
 #popupadd .btn{
     margin-top: 3vh;
+}
+
+.agent_details #popupadd{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 17%;
+    left: 35%;
+    transform: (-50%,-50%);
+    width: 37rem;
+    height: 30rem;
+    padding: 2.5rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.agent_details #popupadd.active{
+    top:17%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.agent_details #popupedit{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 17%;
+    left: 35%;
+    transform: (-50%,-50%);
+    width: 37rem;
+    height: 30rem;
+    padding: 2.5rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.agent_details #popupedit.active{
+    top:17%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+.popup_company #popupadd_bank{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 9%;
+    left: 19%;
+    transform: (-50%,-50%);
+    width: 70rem;
+    height: 40rem;
+    padding: 1.7rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.popup_company #popupadd_bank .btn{
+    margin-top: 2vh;
+}
+
+
+.popup_company #popupedit_bank{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 9%;
+    left: 19%;
+    transform: (-50%,-50%);
+    width: 70rem;
+    height: 40rem;
+    padding: 1.7rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.popup_company #popupedit_bank .btn{
+    margin-top: 2vh;
+}
+
+
+#popupadd_bank{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 9%;
+    left: 19%;
+    transform: (-50%,-50%);
+    width: 70rem;
+    height: 40rem;
+    padding: 4rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupadd_bank.active{
+    top:9%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupadd_bank .btn{
+    margin-top: 5vh;
+}
+
+.bank_data{
+    display: flex;
+}
+
+
+#bank_details{
+    display: flex;
+    flex-direction: column;
+    margin:0 1vw 0 1vw;
+}
+
+#bank_details .data {
+    margin-left: 0.2vw;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+#bank_details #inputdata {
+    font-size: 1.5rem;
+    width: 24vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+    border: 3px solid rgb(206, 204, 204);
+}
+
+#popupadd_bank .btn-left{
+    padding: 0.5rem 2.1rem;
+}
+
+
+#popupedit_bank{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 9%;
+    left: 19%;
+    transform: (-50%,-50%);
+    width: 70rem;
+    height: 40rem;
+    padding: 3.5rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #e2f3ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popupedit_bank.active{
+    top:9%;
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popupedit_bank .btn{
+    margin-top: 5vh;
+}
+
+#popupedit_bank .btn-left{
+    padding: 0.5rem 1.8rem;
 }
 
 #popupedit{
