@@ -112,9 +112,9 @@
                                 </li>
 
                                 <li class="list_item">
-                                    <a href="../pages/salary_sheet_expense.html" class=" pages">
+                                    <a href="../pages/salary_sheet_shortage.html" class=" pages">
                                         <i class="icons fa-solid fa-dollar-sign"></i>
-                                        <span class="page_name">Expense</span>
+                                        <span class="page_name">Shortage</span>
                                     </a>
                                 </li>
                             </ul>
@@ -146,6 +146,7 @@
 
                     </li>
 
+
                     <li class="list_item">
                         <a class="pages" href="../pages/expense.html">
                             <i class="icons fa-solid fa-sack-dollar"></i>
@@ -159,18 +160,59 @@
                             <span class="page_name">Settings</span>
 
                             <ul class="settings-page-list">
-                                <li class="list_item">
-                                    <a href="../pages/role.html" class="pages">
-                                        <i class="icons fa-solid fa-users-line"></i>
-                                        <span class="page_name">Role</span>
-                                    </a>
+
+                                <li class="list_item usermanagement-pages">
+
+                                    <div class="pages">
+                                        <a href="../pages/user_management.html" class="pages">
+                                            <i class="icons fa-solid fa-users-line"></i>
+                                            <span class="page_name">User Management</span>
+                                        </a>
+
+                                        <ul class="usermanagement-page-list">
+                                            <li class="list_item">
+                                                <a href="../pages/role.html" class="pages">
+                                                    <i class="icons fa-solid fa-users-line"></i>
+                                                    <span class="page_name">Role</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="list_item">
+                                                <a href="../pages/permission.html" class=" pages">
+                                                    <i class="icons fa-solid fa-users-line"></i>
+                                                    <span class="page_name">Permission</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                 </li>
 
-                                <li class="list_item">
-                                    <a href="../pages/company.html" class="pages">
-                                        <i class="icons fa-solid fa-users-line"></i>
-                                        <span class="page_name">Company</span>
-                                    </a>
+                                <li class="list_item company-pages">
+
+                                    <div class="pages">
+                                        <a href="../pages/company.html" class="pages">
+                                            <i class="icons fa-solid fa-users-line"></i>
+                                            <span class="page_name">Company</span>
+                                        </a>
+
+                                        <ul class="company-page-list">
+                                            <li class="list_item">
+                                                <a href="../pages/bank.html" class="pages">
+                                                    <i class="icons fa-solid fa-users-line"></i>
+                                                    <span class="page_name">Bank</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="list_item">
+                                                <a href="../pages/agent.html" class=" pages">
+                                                    <i class="icons fa-solid fa-users-line"></i>
+                                                    <span class="page_name">Agent</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                 </li>
                             </ul>
                         </div>
@@ -183,12 +225,32 @@
         </div>
 
         <div class="employee_sheet_content">
-            <div class="search-add">
+            <div class="search-company-role-add">
                 <div class="search">
                     <input type="text" id="search" placeholder="Search">
                     <button type="button" class="btn-search">
                         <i class="fa fa-search search-icon"></i>
                     </button>
+                </div>
+
+                <div class="company">
+                    <form>
+                        <label class="select">Select a Company:</label>
+                        <select id="company">
+                            <option>Company 1</option>
+                            <option>Company 2</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="role">
+                    <form>
+                        <label class="select">Select a Role:</label>
+                        <select id="role">
+                            <option>Role 1</option>
+                            <option>Role 2</option>
+                        </select>
+                    </form>
                 </div>
 
                 <div class="addEmployee">
@@ -214,6 +276,7 @@
                             <th>Role</th>
                             <th>Reporter</th>
                             <th>Appoint Date</th>
+                            <th>Resign Date</th>
                             <th>Status</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -235,6 +298,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             
                             <td>
                                 
@@ -242,6 +306,7 @@
                         </tr>
         
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -271,6 +336,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                             <td>
                                 
                             </td>
@@ -278,6 +344,7 @@
                         </tr>
         
                         <tr>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>

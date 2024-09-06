@@ -113,9 +113,9 @@
                                     </li>
     
                                     <li class="list_item">
-                                        <a href="../pages/salary_sheet_expense.html" class=" pages">
+                                        <a href="../pages/salary_sheet_shortage.html" class=" pages">
                                             <i class="icons fa-solid fa-dollar-sign"></i>
-                                            <span class="page_name">Expense</span>
+                                            <span class="page_name">Shortage</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -137,7 +137,7 @@
                                     </li>
     
                                     <li class="list_item">
-                                        <a href="../pages/attendance-monthly.html" class=" pages">
+                                        <a href="../pages/attendance-monthly.html"" class=" pages">
                                             <i class="icons fa-solid fa-person-circle-check"></i>
                                             <span class="page_name">Monthly</span>
                                         </a>
@@ -146,6 +146,7 @@
                             </div>
     
                         </li>
+    
     
                         <li class="list_item">
                             <a class="pages" href="../pages/expense.html">
@@ -160,18 +161,59 @@
                                 <span class="page_name">Settings</span>
     
                                 <ul class="settings-page-list">
-                                    <li class="list_item">
-                                        <a href="../pages/role.html" class="pages">
-                                            <i class="icons fa-solid fa-users-line"></i>
-                                            <span class="page_name">Role</span>
-                                        </a>
+    
+                                    <li class="list_item usermanagement-pages">
+    
+                                        <div class="pages">
+                                            <a href="../pages/user_management.html" class="pages">
+                                                <i class="icons fa-solid fa-users-line"></i>
+                                                <span class="page_name">User Management</span>
+                                            </a>
+    
+                                            <ul class="usermanagement-page-list">
+                                                <li class="list_item">
+                                                    <a href="../pages/role.html" class="pages">
+                                                        <i class="icons fa-solid fa-users-line"></i>
+                                                        <span class="page_name">Role</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="list_item">
+                                                    <a href="../pages/permission.html" class=" pages">
+                                                        <i class="icons fa-solid fa-users-line"></i>
+                                                        <span class="page_name">Permission</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+    
                                     </li>
     
-                                    <li class="list_item">
-                                        <a href="../pages/company.html" class="pages">
-                                            <i class="icons fa-solid fa-users-line"></i>
-                                            <span class="page_name">Company</span>
-                                        </a>
+                                    <li class="list_item company-pages">
+    
+                                        <div class="pages">
+                                            <a href="../pages/company.html" class="pages">
+                                                <i class="icons fa-solid fa-users-line"></i>
+                                                <span class="page_name">Company</span>
+                                            </a>
+    
+                                            <ul class="company-page-list">
+                                                <li class="list_item">
+                                                    <a href="../pages/bank.html" class="pages">
+                                                        <i class="icons fa-solid fa-users-line"></i>
+                                                        <span class="page_name">Bank</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="list_item">
+                                                    <a href="../pages/agent.html" class=" pages">
+                                                        <i class="icons fa-solid fa-users-line"></i>
+                                                        <span class="page_name">Agent</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+    
                                     </li>
                                 </ul>
                             </div>
@@ -208,7 +250,7 @@
                         <thead>
 
                             <tr class="table_head">
-                                <th>Id</th>
+                        
                                 <th>Name</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
@@ -219,28 +261,18 @@
 
 
                             <tr>
-                                <td></td>
+                                
                                 <td></td>
                                 <td>
-                                   
+                                    
                                 </td>
                                 <td>
-                                   
+                                    
                                 </td>
                             </tr>
 
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <td></td>
+                                
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -252,10 +284,18 @@
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                
                                 <td>
 
                                 </td>
+
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                
 
                             </tr>
 
@@ -288,7 +328,7 @@
                 </button>
             </a>
 
-            <a class="popup-btn" href="../pages/role.html" onclick="toggleadd()">
+            <a class="popup-btn" href="#" onclick="toggleadd()">
                 <button type="button" class="btn btn-right">
                     Cancel
                 </button>
@@ -296,9 +336,12 @@
         </div>
     </div>
 
+    
+
     <script src="../fontawesome-icons/icons.js"></script>
     <script src="../js/profileicon_dropdown.js"></script>
     <script src="../js/popup_msg(add).js"></script>
+    
 </body>
 
 </html>

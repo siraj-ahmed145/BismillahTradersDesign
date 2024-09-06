@@ -23,9 +23,9 @@
 
                 <ul class="list">
                     <li>
-                        <a href="../pages/salary_sheet_fuel_demo.html" class="top-pagename">
-                            <i class="icon fa-solid fa-dollar-sign "></i>
-                            <p>OverTime Salary Sheet</p>
+                        <a href="../pages/permission.html" class="top-pagename">
+                            <i class="icon fa-solid fa-users-line"></i>
+                            <p>Permission</p>
                         </a>
                     </li>
 
@@ -226,7 +226,7 @@
             </div>
 
             <div class="employee_sheet_content">
-                <div class="search-company-calender-add">
+                <div class="search-add">
                     <div class="search">
                         <input type="text" id="search" placeholder="Search">
                         <button type="button" class="btn-search">
@@ -234,44 +234,15 @@
                         </button>
                     </div>
 
-                    <div class="company">
-                        <form>
-                            <label class="select">Select a Company:</label>
-                            <select id="company">
-                                <option>Company 1</option>
-                                <option>Company 2</option>
-                            </select>
-                        </form>
-                    </div>
-
-                    <div class="Calender">
-                        <form>
-                            <label class="select">Select a Month:</label>
-                            <select id="months">
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                        </form>
-                    </div>
-
                     <div class="add">
-                        <a href="#">
-                            <button type="button" class="btn" onclick="toggleaddsalary()">
-                                Add OverTime Amount
+                        <a href="#" onclick="toggleadd()">
+                            <button type="button" class="btn">
+                                Add Permission
                             </button>
                         </a>
                     </div>
                 </div>
+
 
 
                 <div class="table">
@@ -279,12 +250,10 @@
                         <thead>
 
                             <tr class="table_head">
-                                <th>Id</th>
+                                
                                 <th>Name</th>
-                                <th>Company</th>
-                                <th>Overtime</th>
+                                <th>Edit</th>
                                 <th>Delete</th>
-
                             </tr>
                         </thead>
 
@@ -292,16 +261,31 @@
 
 
                             <tr>
-                                <td>ahmed.khan123</td>
-                                <td>Ahmed Khan</td>
-                                <td>Bismillah Traders</td>
-                                <td>100000</td>
+                                
+                                <td></td>
                                 <td>
-                                    <a href="#" class="button" onclick="toggledelete()">
-                                        <p>Delete</p>
-                                    </a>
+                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+
+                            <tr>
+                               
+                                <td></td>
+                                <td></td>
+                                <td>
+
                                 </td>
 
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                
 
                             </tr>
 
@@ -309,41 +293,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
 
 
                             </tr>
 
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-
-                            </tr>
 
 
 
@@ -357,34 +310,23 @@
         </div>
     </div>
 
-    <div id="popupaddsalary">
-        <div id="salary-employee">
-            <label class="select">
-                <p>Employee:</p>
-            </label>
-            <select id="employee">
-                <option>Employee 1</option>
-                <option>Employee 2</option>
-                
-            </select>
-        </div>
-
-        <div id="salary-amount">
+    <div id="popupadd">
+        <form id="role-company">
             <label class="data">
-                <p>OverTime Amount</p>
+                <p>Permission</p>
             </label>
-            <input type="text" id="inputdata" placeholder="OverTime Amount">
-        </div>
+            <input type="text" id="inputdata" placeholder="Permission">
+        </form>
 
-        <div class="salary-popup-btn">
+        <div>
 
-            <a class="popup-btn" href="#" onclick="toggleaddsalary()">
+            <a class="popup-btn" href="../pages/permission_demo.html" onclick="toggleadd()">
                 <button type="button" class="btn btn-left">
                     Add
                 </button>
             </a>
 
-            <a class="popup-btn" href="#" onclick="toggleaddsalary()">
+            <a class="popup-btn" href="#" onclick="toggleadd()">
                 <button type="button" class="btn btn-right">
                     Cancel
                 </button>
@@ -392,30 +334,12 @@
         </div>
     </div>
 
-    <div id="popupdelete">
-        <p>Are you sure you want to delete it?</p>
-
-        <div>
-
-            <a class="popup-btn" href="../pages/salary_sheet_overtime.html" onclick="toggledelete()">
-                <button type="button" class="btn">
-                    Yes
-                </button>
-            </a>
-
-            <a class="popup-btn" href="#" onclick="toggledelete()">
-                <button type="button" class="btn btn-right">
-                    No
-                </button>
-            </a>
-        </div>
-
-    </div>
+    
 
     <script src="../fontawesome-icons/icons.js"></script>
     <script src="../js/profileicon_dropdown.js"></script>
-    <script src="../js/popup_msg(add-salary).js"></script>
-    <script src="../js/popup_msg(delete).js"></script>
+    <script src="../js/popup_msg(add).js"></script>
+    
 </body>
 
 </html>
